@@ -126,7 +126,7 @@ const NovedadesSection = () => {
             {novedades.map((novedad) => (
               <div
                 key={novedad.id}
-                className="w-11/12 md:w-1/3 lg:w-1/4 flex-shrink-0 px-2 scroll-snap-align-start"
+                className="w-11/12 sm:w-1/3 lg:w-1/4 flex-shrink-0 px-2 scroll-snap-align-start"
               >
                 <div
                   className="cursor-pointer transform hover:scale-105 transition-all duration-300"
@@ -296,14 +296,11 @@ const NovedadesSection = () => {
                           selectedNovedad.body &&
                           <div>                          
                           <ul>
-                            {selectedNovedad.body.map(item =>{
-                              return(
+                            {selectedNovedad.body.map(item =>
                                 <li>
                                   <p className="text-md font-semibold inline-block opacity-90 leading-snug mb-4">{item}</p>
-                                </li>
-                              )
-                              })
-                            }                            
+                                </li>                              
+                            )}                            
                           </ul>
                           </div>
                         }

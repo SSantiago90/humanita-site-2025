@@ -26,11 +26,10 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> */}
-          <div className="grid grid-cols-12 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
           
           {/* Logo and Contact Info */}
-          <div className="space-y-4 col-span-3">
+          <div className="space-y-4 col-span-1 md:col-span-1 lg:col-span-3">
             <div className="flex items-center space-x-4">
               <img src={humanitaLogo} alt="Humanita" className="h-18 w-auto brightness-0 invert" />
               <div className="hidden">
@@ -74,7 +73,7 @@ const Footer = () => {
           </div>
 
           {/* Navigation Links */}
-         <div className="col-span-2">
+         <div className="col-span-1 md:col-span-1 lg:col-span-2">
             <h4 className="text-lg font-semibold mb-4">Navegación</h4>
             <ul className="space-y-2">
               {mainMenuItems.map((item) => (
@@ -91,7 +90,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="col-span-2">
+          <div className="col-span-1 md:col-span-1 lg:col-span-2">
             <h4 className="text-lg font-semibold mb-4">Enlaces Rápidos</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
@@ -124,7 +123,7 @@ const Footer = () => {
           </div>
 
           {/* Additional Info */}
-          <div className="col-span-5">
+          <div className="col-span-1 md:col-span-2 lg:col-span-5">
           <NovedadesFinalSection/>
           </div>
             
